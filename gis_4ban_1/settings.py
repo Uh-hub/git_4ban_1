@@ -17,9 +17,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 env_list = dict()
 
-local_env = open(os.path.join(BASE_DIR, ".env"))
+local_env = open(os.path.join(BASE_DIR, ".env"), encoding='UTF-8')
 
 while True:
+
     line = local_env.readline()  #파일 읽어들임
     if not line: #파일 마지막 줄까지 다 읽으면 break
         break
