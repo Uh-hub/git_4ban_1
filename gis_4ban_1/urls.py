@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-urlpatterns = [ #어디로 갈지? 그 주소로 가도록 연결 시켜주기
+urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accountapp.urls'))
 

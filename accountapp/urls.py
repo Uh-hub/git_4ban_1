@@ -3,8 +3,8 @@ from accountapp.views import hello_world, AccountCreateView
 
 app_name = 'accountapp'
 
-urlpatterns = [  # 어디로 갈지? 그 주소로 가도록 연결 시켜주기
+urlpatterns = [
     path('hello_world/', hello_world, name='hello_world'),
 
-    path('create/', AccountCreateView.as_view(), name = 'create')
+    path('create/', AccountCreateView.as_view(), name='create')
 ]
