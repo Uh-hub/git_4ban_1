@@ -6,7 +6,11 @@
         <span>href="{% url 'articleapp:list' %}">
             Articles
         </span>
-        <span>nav2</span>
+        <span>
+            <a href="{% url 'projectapp:list' %}">
+                Projects
+            </a>
+        </span>
         {% if not user.is_authenticated %}
         <span>
             <a href="{% url 'accountapp:login' %}">
