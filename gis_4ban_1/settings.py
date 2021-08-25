@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from django.core.checks import messages
 from django.urls import reverse_lazy
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -66,6 +67,10 @@ INSTALLED_APPS = [
     'subscribeapp',
     'likeapp',
 ]
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR:'danger',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
