@@ -1,4 +1,5 @@
-from django.forms import ModelForm, forms
+from django import forms
+from django.forms import ModelForm
 
 from articleapp.models import Article
 
